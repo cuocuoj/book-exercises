@@ -43,4 +43,4 @@ city_highest_speed <- flights %>%
   group_by(dest) %>%
   summarize(avg_speed = mean(speed, na.rm = TRUE)) %>%
   filter(avg_speed == max(avg_speed, na.rm = TRUE))
-city_fasted_speed
+city_highest_speed
